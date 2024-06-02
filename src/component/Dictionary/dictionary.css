@@ -1,0 +1,106 @@
+.dic-wrapper {
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    #cb60b3 0%,
+    #ad1283 50%,
+    #de47ac 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: #fff;
+}
+.dic-wrapper h1:first-child {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.dic-wrapper .search {
+  display: flex;
+  height: 50px;
+
+  align-items: center;
+}
+input {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  height: 45px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+.dic-wrapper .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 35px;
+  margin-bottom: 1rem;
+}
+.get,
+.clear {
+  height: 100%;
+  width: 150px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.get:hover {
+  background-color: green;
+  color: white;
+}
+.clear {
+  width: 150px;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.clear:hover {
+  background-color: red;
+  color: white;
+}
+.meaning {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+@media screen and (max-width: 700px) {
+  .dic-wrapper h1:first-child {
+    font-size: 2.5rem;
+  }
+  input {
+    font-size: 1rem;
+    height: 40px;
+  }
+  .get,
+  .clear {
+    width: 150px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dic-wrapper {
+    padding: 1rem 0.5rem;
+  }
+  .dic-wrapper h1:first-child {
+    font-size: 1.5rem;
+  }
+  input {
+    font-size: 1rem;
+    height: 35px;
+  }
+  .get,
+  .clear {
+    width: 100px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
